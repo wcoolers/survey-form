@@ -1,0 +1,11 @@
+#title,
+#description{
+  text-align: center;
+}
+.form_area {
+  max-width: 800px !important;
+  margin: 0 auto;
+}
+#name, #email, #number, #dropdown, #box {
+  box-shadow: 1px 1px 5px 3px #ddd;
+}

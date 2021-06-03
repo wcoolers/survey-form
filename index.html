@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" defer></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+    </head>
+    <body>
+        <div id="main" class="container">
+            <div class="row">
+                <h1 class="col-sm-12 mx-auto" id="title">Freelance Employee Survey</h1>
+                <p class="col-sm-12 mx-auto" id="description">This survey will not take more than a few minutes of your time. We are grateful for your feedback.</p>
+            </div>
+        </div>
+        <form class="container form_area" id="survey-form" action="/#">
+            <div class="form-group">
+                <label id="name-label"for="name">Name</label><br>
+                <input type="text" class="form-control" id="name" placeholder="Please enter your name" required="required"><br>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label><br>
+                <input type="email" class="form-control" id="email" placeholder="Please enter your email" required="required"><br>
+            </div>
+            <div class="form-group">
+                <label id="number-label"for="number">Number</label><br>
+                <input type="number" class="form-control" id="number" placeholder="Please enter a number" required="required" min="0" max="9"><br>
+            </div>
+            <div class="form-group">
+                <label for="dropdown">Select your current role</label><br>
+                <select class="custom-select" id="dropdown">    
+                <option value="Developer">Developer</option>
+                <option value="Tester">Tester</option>
+                <option value="Others">Others</option>
+                </select>
+            </div>
+            <br>
+            <p> Would you rather freelance somewhere else?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="yes" name="radio" value="yes">
+                <label class="form-check-label" for="yes">Yes</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="no" name="radio" value="no">
+                <label class="form-check-label" for="no">No</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="undecided" name="radio" value="undecided">
+                <label class="form-check-label" for="undecided">Undecided</label>
+            </div>
+            <br>
+            <p> What other jobs would you like to be offered here? (select all that apply)</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="job1" value="CMS">
+                <label class="form-check-label" for="job1">CMS related</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="job2" value="graphic design">
+                <label class="form-check-label" for="job2">Graphic Design</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="job3" value="mobile testing">
+                <label class="form-check-label" for="job3">Mobile Testing</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="job4" value="cloud computing">
+                <label class="form-check-label" for="job4">Cloud Computing</label>
+            </div>
+            <br>
+            <p></p>
+            <div class="form-group">
+                <label for="box">Please include any further comments you may have below</label>
+                <textarea class="form-control" name="comments" id="box" rows="4" placeholder="Additional comments, if any"></textarea>
+            </div>
+            <div class="container">
+                <div class="row">
+                <input class="mb-3 btn btn-success col-sm-12" type="submit" id="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </body>
+    
+</html>
